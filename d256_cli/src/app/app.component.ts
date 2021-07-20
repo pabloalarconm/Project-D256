@@ -26,7 +26,7 @@ export class AppComponent implements OnInit{
 
 
   ngOnInit(): void {
-    this.ws = Ws("ws://localhost:3333/", {
+    this.ws = Ws("ws://0.0.0.0:8080/", {
       path: "adonis-ws"
     });
 
