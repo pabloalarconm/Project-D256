@@ -14,7 +14,7 @@ export class AppComponent implements OnInit{
   chat:any;
   mensajes:string[] = [];
 
-  msg_user: string = "";
+  msg_user: string = "John Doe";
   msg_20:number=0;
   msg_12:number=0;
   msg_100:number=0;

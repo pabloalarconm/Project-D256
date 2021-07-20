@@ -1,8 +1,8 @@
 <nav style="background-color: blanchedalmond;" role="navigation">
   <div class="nav-wrapper container">
-    <a id="logo-container"  class="brand-logo" style="color:black; font-family:sans-serif;"> Project D256: Chat Roll Dices</a>
-    <ul  class="right hide-on-med-and-down">
-      <li><a style="color:black;" href="https://github.com/pabloalarconm">Semantic Freak project web page</a></li>
+    <a id="logo-container"  class="brand-logo" style="color:black; font-family:sans-serif;"><strong>Project D256</strong></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a style="color:black;" href="https://github.com/pabloalarconm/SemanticFreak">Semantic Freak project</a></li>
     </ul>
   </div>
 </nav>
@@ -12,17 +12,16 @@
         <div class="col-auto mb-3" >
             <div class="card" style="width: 25rem;height: 12rem; background-color: #e0e0e0">
                 <div class="card-body">
-                    <h5 class="card-title"> Choose the Player: </h5>
+                    <h5 class="card-title"> Choose a player: </h5>
                     <select class="form-select" aria-label="Default select example" [(ngModel)] = "msg_user">
-                        <option selected>Choose the player</option>
                         <option value="Pablo">Pablo</option>
                         <option value="Maria">Maria</option>
                         <option value="Elena">Elena</option>
                         <option value="Carlos">Carlos</option>
                         <option value="Adrian">Adrian</option>
-                        <option value="Invitado1">Invitado1</option>
-                        <option value="Invitado2">Invitado2</option>
-                        <option value="Invitado3">Invitado3</option>
+                        <option value="Guest1">Guest1</option>
+                        <option value="Guest2">Guest2</option>
+                        <option value="Guest3">Guest3</option>
                     </select>
                 </div>
             </div>
@@ -31,10 +30,10 @@
         <div class="col-auto mb-3">
             <div class="card" style="width: 25rem; height: 12rem; background-color: #e0e0e0 ;">
                 <div class="card-body">
-                    <h5 class="card-title">Roll the dices!</h5>
-                    <button type="button" class="btn btn-primary btn-block" style="width: 23rem; background-color: #0084d1;" (click)="enviarMensaje()" >Roll</button>
+                    <h5 class="card-title">Chat your Dice!</h5>
+                    <button type="button" class="btn btn-primary btn-block" style="width: 23rem; background-color: #0084d1 " (click)="limpiarMensaje()">Clean up</button>
                     <br>
-                    <button type="button" class="btn btn-primary btn-block" style="width: 23rem; background-color: #d3564b" (click)="limpiarMensaje()" >Limpiar</button>
+                    <button type="button" class="btn btn-primary btn-block" style="width: 23rem;height: 3em; background-color: #d3564b;" (click)="enviarMensaje()">Roll</button>
                 </div>
             </div>
         </div>
@@ -47,7 +46,7 @@ padding-left: 15px;margin-left: 15px;
 float: right;background-color:  #A9443B;">
 
           <div class="card-body" style="height:100 rem;">
-            <h5 class="card-title">Dice Results:</h5>
+            <h5 class="card-title"> <strong>Dice Results:</strong></h5>
             <hr>
             <ul class="list-group list-group-flush" style="display: flex; flex-direction: column-reverse; width: 95%; height: 50rem; overflow-y: scroll;">
               <li class="list-group-item" *ngFor="let mensaje of mensajes" style="color: darkblue; background-color:#d3564b;">{{mensaje}}</li>
