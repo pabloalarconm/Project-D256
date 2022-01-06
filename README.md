@@ -1,8 +1,4 @@
-# SemanticFreak
-### Repository full of web tools related with RPG games
-<br>
-
-## **Project D256:** Web service based Websocket communications for rolling dices virtually.
+# **Project D256:** Web service based Websocket communications for rolling dices virtually.
 
 Chat your rolls with friends for games like Dungeons & Dragons, Fiasco and more. This web service is based on a Adonisjs API with Websocket integrated running in port 8080, and an Angular-based Client that enables a variety of dice's rolls, running in port 4200.
 
